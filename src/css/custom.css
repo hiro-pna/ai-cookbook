@@ -1,0 +1,170 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #4f46e5;
+  --ifm-color-primary-darker: #4338ca;
+  --ifm-color-primary-darkest: #3730a3;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #a78bfa;
+  --ifm-color-primary-lightest: #c4b5fd;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Glass morphism variables - subtle for documentation */
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.15);
+  --glass-backdrop: blur(4px);
+  
+  /* Subtle background for documentation */
+  --doc-bg-light: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Dark mode glass morphism */
+  --glass-bg: rgba(15, 23, 42, 0.95);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+  
+  /* Dark mode background */
+  --doc-bg-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Global glass morphism utilities */
+.glass {
+  background: var(--glass-bg);
+  border-radius: 12px;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+}
+
+/* Subtle gradient background for homepage only */
+.homepage-gradient {
+  background: var(--doc-bg-light);
+  min-height: 100vh;
+}
+
+[data-theme='dark'] .homepage-gradient {
+  background: var(--doc-bg-dark);
+}
+
+/* Remove animated gradient - too distracting for documentation */
+body {
+  background: var(--ifm-background-color);
+  transition: background 0.3s ease;
+}
+
+/* Only apply special background to homepage */
+body[data-page="homepage"] {
+  background: var(--doc-bg-light);
+}
+
+[data-theme='dark'] body[data-page="homepage"] {
+  background: var(--doc-bg-dark);
+}
+
+/* Floating animation - more subtle */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Glass button styles - more subtle */
+.button--glass {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  backdrop-filter: var(--glass-backdrop) !important;
+  -webkit-backdrop-filter: var(--glass-backdrop) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--glass-shadow);
+}
+
+.button--glass:hover {
+  background: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary-darkest) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px 0 rgba(31, 38, 135, 0.25);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Documentation pages background */
+.main-wrapper {
+  background: transparent !important;
+}
+
+/* Make navbar glass - but subtle */
+.navbar {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-backdrop) !important;
+  -webkit-backdrop-filter: var(--glass-backdrop) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+/* Footer glass effect - improved and more stable */
+footer.footer,
+.footer--dark,
+.footer {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-backdrop) !important;
+  -webkit-backdrop-filter: var(--glass-backdrop) !important;
+  border-top: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+  position: relative;
+}
+
+/* Ensure footer content is readable */
+.footer__title,
+.footer__item,
+.footer__link-item {
+  color: var(--ifm-color-emphasis-800) !important;
+}
+
+[data-theme='dark'] .footer__title,
+[data-theme='dark'] .footer__item,
+[data-theme='dark'] .footer__link-item {
+  color: var(--ifm-color-emphasis-300) !important;
+}
+
+/* Improve readability for documentation content */
+.markdown {
+  background: var(--ifm-background-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .markdown {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
