@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkai_cookbook=self.webpackChunkai_cookbook||[]).push([[8742],{8742:(e,k,o)=>{o.d(k,{createPieServices:()=>c.f});var c=o(7857);o(1028)}}]);

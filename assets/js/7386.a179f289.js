@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkai_cookbook=self.webpackChunkai_cookbook||[]).push([[7386],{7386:(e,k,c)=>{c.d(k,{createPacketServices:()=>o.$});var o=c(4273);c(1028)}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkai_cookbook=self.webpackChunkai_cookbook||[]).push([[3424],{3424:(e,c,k)=>{k.d(c,{createArchitectureServices:()=>o.S});var o=k(4318);k(1028)}}]);

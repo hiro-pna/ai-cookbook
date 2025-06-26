@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkai_cookbook=self.webpackChunkai_cookbook||[]).push([[1235],{6171:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
