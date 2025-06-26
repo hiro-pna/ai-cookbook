@@ -47,9 +47,7 @@ Trong bối cảnh công nghệ liên tục đổi mới, **trí tuệ nhân t�
 
 ## Nguyên tắc sử dụng AI hiệu quả
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="/img/human_ai.png" alt="Human-AI Collaboration" style={{width: '400px', height: 'auto'}} />
-</div>
+![HUMAN-AI](./human_ai.png)
 
 ### 🎯 **AI là công cụ, không phải thay thế**
 
